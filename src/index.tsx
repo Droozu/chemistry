@@ -1,17 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import Element from './App';
+
+interface IElement {
+    name: string,
+    symbol: string,
+    sequenceNumber: number,
+    electronsOnLayer: number[],
+    atomicMass: number,
+    elementType: string
+}
+
+const hydrogen: IElement = {
+    name: "Водород",
+    symbol: "H",
+    sequenceNumber: 1,
+    electronsOnLayer: [1],
+    atomicMass: 1.008,
+    elementType: "S"
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Element el={hydrogen}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
