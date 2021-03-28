@@ -14,16 +14,29 @@ body {
 
 
 $s-color: #ff1f40;
-$d-color: #2929ff;
+$d-color: #476dd6;
 $p-color: #ffff00;
 $f-color: #2bb52b;
 
 
 .element {
+  &__table {
+    &--vii {
+      border-top: none;
+      border-bottom: none;
+
+      &:first-of-type {
+        border-left: none;
+      }
+      &:last-of-type {
+        border-right: none  ;
+      }
+    }
+  }
+
   &__container {
     width: 100px;
-    height: 66px;
-    border: 1px solid black;
+    height: 60px;
     display: flex;
     justify-content: space-between;
     padding: 3px;
@@ -31,15 +44,29 @@ $f-color: #2bb52b;
 
     &--s {
       background-color: $s-color;
+      cursor: pointer;
     }
     &--d {
       background-color: $d-color;
+      cursor: pointer;
+      flex-direction: row-reverse;
+      .element__info {
+        &--text {
+          align-items: flex-end;
+        }
+        &--numbers {
+          flex-direction: row-reverse;
+          justify-content: flex-start;
+        }
+      }
     }
     &--f {
       background-color: $f-color;
+      cursor: pointer;
     }
     &--p {
       background-color: $p-color;
+      cursor: pointer;
     }
   }
 
@@ -50,29 +77,43 @@ $f-color: #2bb52b;
       flex-direction: column;
     }
     &--numbers {
-
+      gap: 3px;
     }
   }
 
   &__symbol {
     margin: 0;
+    font-size: 1.2em;
   }
   &__name {
     margin: 0;
-    font-size: 0.75em;
+    font-size: 0.65em;
     text-transform: uppercase;
   }
   &__mass {
     margin: 4px 0 0 0;
-    font-size: 0.6em;
+    font-size: 0.55em;
   }
   &__sequence {
     margin: 0;
+    font-size: 0.8em;
   }
   &__layers {
-    font-size: 0.6em;
+    font-size: 0.45em;
     display: flex;
     align-items: flex-end;
     flex-direction: column-reverse;
   }
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+td:nth-of-type(8n) {
+  width: 300px;
 }

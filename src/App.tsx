@@ -18,36 +18,124 @@ const setClassOfElement = (elementType: string):string => {
     return "element__container"
 }
 
+const getRow = (layer: Array<IElement | Array<IElement> | null>) => {
+    return layer.map((element, index) => {
+        if (Array.isArray(element)) {
+            const elements = element.map((el, ind) => {
+                const { name, elementType, atomicMass, electronsOnLayer, sequenceNumber, symbol } = el
+                const elementClass = setClassOfElement(elementType)
+                const layers = electronsOnLayer.map((elLayer, index) => <span key={index}> {elLayer} </span>)
+                return (
+                    <td className="element__table--vii" key={ind}><div className={elementClass}>
+                        <section className='element__info element__info--text'>
+                            <h2 className='element__symbol'>{symbol}</h2>
+                            <p className='element__name'>{name}</p>
+                            <p className='element__mass'>{atomicMass}</p>
+                        </section>
+                        <section className='element__info element__info--numbers'>
+                            <p className='element__sequence'>{sequenceNumber}</p>
+                            <div className='element__layers'>{layers}</div>
+                        </section>
+                    </div></td>
+                )
+            })
+            return (
+                <td>
+                <table>
+                    <tr>
+                        {elements}
+                    </tr>
+                </table>
+                </td>
+            )
+        }
+        if (element !== null) {
+            const { name, elementType, atomicMass, electronsOnLayer, sequenceNumber, symbol } = element
+            const elementClass = setClassOfElement(elementType)
+            const layers = electronsOnLayer.map((elLayer, index) => <span key={index}> {elLayer} </span>)
+            return (
+                <td key={index}><div className={elementClass}>
+                    <section className='element__info element__info--text'>
+                        <h2 className='element__symbol'>{symbol}</h2>
+                        <p className='element__name'>{name}</p>
+                        <p className='element__mass'>{atomicMass}</p>
+                    </section>
+                    <section className='element__info element__info--numbers'>
+                        <p className='element__sequence'>{sequenceNumber}</p>
+                        <div className='element__layers'>{layers}</div>
+                    </section>
+                </div></td>
+            )
+        }
+        return <td key={index}><div className='element__container'> </div></td>
+    })
+}
 
-interface IElement {
+
+type IElement = {
     name: string,
     symbol: string,
     sequenceNumber: number,
     electronsOnLayer: number[],
-    atomicMass: number,
+    atomicMass: number | string,
     elementType: string
 }
 
-type ElementProps = {
-    el: IElement
+
+interface IElementProps {
+    firstLayer: Array<IElement | null>,
+    secondLayer: Array<IElement | null>,
+    thirdLayer: Array<IElement | null>,
+    fourthLayer: Array<IElement | Array<IElement> | null>,
+    fifthLayer: Array<IElement | null>,
+    sixthLayer: Array<IElement | Array<IElement> | null>,
+    seventhLayer: Array<IElement | null>,
+    eighthLayer: Array<IElement | Array<IElement> | null>,
+    ninthLayer: Array<IElement | null>,
 }
 
-const Element = ({el}: ElementProps) => {
-    const { name, symbol, sequenceNumber, electronsOnLayer, atomicMass, elementType } = el
-    const elementClass = setClassOfElement(elementType)
-    const layers = electronsOnLayer.map((layer, index) => (<span key={index}> {layer} </span>))
+const Element = ({firstLayer, secondLayer, thirdLayer, fourthLayer, fifthLayer, sixthLayer,
+                     seventhLayer, eighthLayer, ninthLayer}: IElementProps) => {
+    const first = getRow(firstLayer)
+    const second = getRow(secondLayer)
+    const third = getRow(thirdLayer)
+    const fourth = getRow(fourthLayer)
+    const fifth = getRow(fifthLayer)
+    const sixth = getRow(sixthLayer)
+    const seventh = getRow(seventhLayer)
+    const eighth = getRow(eighthLayer)
+    const ninth = getRow(ninthLayer)
+
     return (
-        <div className={elementClass}>
-            <section className='element__info element__info--text'>
-                <h2 className='element__symbol'>{symbol}</h2>
-                <p className='element__name'>{name}</p>
-                <p className='element__mass'>{atomicMass}</p>
-            </section>
-            <section className='element__info element__info--numbers'>
-                <p className='element__sequence'>{sequenceNumber}</p>
-                <div className='element__layers'>{layers}</div>
-            </section>
-        </div>
+        <table>
+            <tr>
+                {first}
+            </tr>
+            <tr>
+                {second}
+            </tr>
+            <tr>
+                {third}
+            </tr>
+            <tr>
+                {fourth}
+            </tr>
+            <tr>
+                {fifth}
+            </tr>
+            <tr>
+                {sixth}
+            </tr>
+            <tr>
+                {seventh}
+            </tr>
+            <tr>
+                {eighth}
+            </tr>
+            <tr>
+                {ninth}
+            </tr>
+        </table>
     )
 }
 
