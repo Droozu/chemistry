@@ -1,0 +1,21 @@
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid black;
+  padding: 0;
+}
+.table {
+  &--vii {
+    border-top: none;
+    border-bottom: none;
+
+    &:first-of-type {
+      border-left: none;
+    }
+    &:last-of-type {
+      border-right: none  ;
+    }
+  }
+}
