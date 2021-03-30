@@ -7,15 +7,18 @@ td {
   padding: 0;
 }
 .table {
-  &--vii {
-    border-top: none;
-    border-bottom: none;
-
-    &:first-of-type {
-      border-left: none;
+  &-headers {
+    &--row {
+      width: 60px;
+      text-align: center;
+      & H2 {
+        margin: 0;
+      }
     }
-    &:last-of-type {
-      border-right: none  ;
+    &--col {
+      display: flex;
+      justify-content: space-around;
+      border: none;
     }
   }
 }
