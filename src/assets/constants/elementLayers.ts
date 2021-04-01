@@ -1,4 +1,4 @@
-import { IElement } from "../../App";
+import { IElement } from '../../App';
 
 const firstLayer: Array<IElement | null> = [
   {
@@ -8,7 +8,7 @@ const firstLayer: Array<IElement | null> = [
     electronsOnLayer: [1],
     atomicMass: 1.008,
     elementType: 'S',
-    id: 1
+    id: 1,
   },
   null,
   null,
@@ -24,7 +24,7 @@ const firstLayer: Array<IElement | null> = [
     electronsOnLayer: [2],
     atomicMass: 4.003,
     elementType: 'S',
-    id: 2
+    id: 2,
   },
 ];
 
@@ -36,7 +36,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 1],
     atomicMass: 6.941,
     elementType: 'S',
-    id: 3
+    id: 3,
   },
   {
     name: 'Бериллий',
@@ -45,7 +45,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 2],
     atomicMass: 9.0122,
     elementType: 'S',
-    id: 4
+    id: 4,
   },
   {
     name: 'Бор',
@@ -54,7 +54,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 3],
     atomicMass: 10.811,
     elementType: 'P',
-    id: 5
+    id: 5,
   },
   {
     name: 'Углерод',
@@ -63,7 +63,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 4],
     atomicMass: 12.011,
     elementType: 'P',
-    id: 6
+    id: 6,
   },
   {
     name: 'Азот',
@@ -72,7 +72,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 5],
     atomicMass: 14.007,
     elementType: 'P',
-    id: 7
+    id: 7,
   },
   {
     name: 'Кислород',
@@ -81,7 +81,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 6],
     atomicMass: 15.999,
     elementType: 'P',
-    id: 8
+    id: 8,
   },
   {
     name: 'Фтор',
@@ -90,7 +90,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 7],
     atomicMass: 18.998,
     elementType: 'P',
-    id: 9
+    id: 9,
   },
   null,
   {
@@ -100,7 +100,7 @@ const secondLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8],
     atomicMass: 20.179,
     elementType: 'P',
-    id: 10
+    id: 10,
   },
 ];
 
@@ -112,7 +112,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 1],
     atomicMass: 22.99,
     elementType: 'S',
-    id: 11
+    id: 11,
   },
   {
     name: 'Магний',
@@ -121,7 +121,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 2],
     atomicMass: 24.312,
     elementType: 'S',
-    id: 12
+    id: 12,
   },
   {
     name: 'Алюминий',
@@ -130,7 +130,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 3],
     atomicMass: 26.092,
     elementType: 'P',
-    id: 13
+    id: 13,
   },
   {
     name: 'Кремний',
@@ -139,7 +139,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 4],
     atomicMass: 28.086,
     elementType: 'P',
-    id: 14
+    id: 14,
   },
   {
     name: 'Фосфор',
@@ -148,7 +148,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 5],
     atomicMass: 30.974,
     elementType: 'P',
-    id: 15
+    id: 15,
   },
   {
     name: 'Сера',
@@ -157,7 +157,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 6],
     atomicMass: 32.064,
     elementType: 'P',
-    id: 16
+    id: 16,
   },
   {
     name: 'Хлор',
@@ -166,7 +166,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 7],
     atomicMass: 35.453,
     elementType: 'P',
-    id: 17
+    id: 17,
   },
   null,
   {
@@ -176,7 +176,7 @@ const thirdLayer: Array<IElement | null> = [
     electronsOnLayer: [2, 8, 8],
     atomicMass: 39.948,
     elementType: 'P',
-    id: 18
+    id: 18,
   },
 ];
 const fourthLayer: Array<IElement | Array<IElement> | null> = [
@@ -187,7 +187,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 8, 1],
     atomicMass: 39.102,
     elementType: 'S',
-    id: 19
+    id: 19,
   },
   {
     name: 'Кальций',
@@ -196,7 +196,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 8, 2],
     atomicMass: 40.08,
     elementType: 'S',
-    id: 20
+    id: 20,
   },
   {
     name: 'Скандий',
@@ -205,7 +205,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 9, 2],
     atomicMass: 44.956,
     elementType: 'D',
-    id: 21
+    id: 21,
   },
   {
     name: 'Титан',
@@ -214,7 +214,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 10, 2],
     atomicMass: 47.956,
     elementType: 'D',
-    id: 22
+    id: 22,
   },
   {
     name: 'Ванадий',
@@ -223,7 +223,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 11, 2],
     atomicMass: 50.941,
     elementType: 'D',
-    id: 23
+    id: 23,
   },
   {
     name: 'Хром',
@@ -232,7 +232,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 12, 2],
     atomicMass: 51.996,
     elementType: 'D',
-    id: 24
+    id: 24,
   },
   {
     name: 'Марганец',
@@ -241,7 +241,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
     electronsOnLayer: [2, 8, 13, 2],
     atomicMass: 54.938,
     elementType: 'D',
-    id: 25
+    id: 25,
   },
   [
     {
@@ -251,7 +251,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
       electronsOnLayer: [2, 8, 14, 2],
       atomicMass: 55.849,
       elementType: 'D',
-      id: 26
+      id: 26,
     },
     {
       name: 'Кобальт',
@@ -260,7 +260,7 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
       electronsOnLayer: [2, 8, 15, 2],
       atomicMass: 58.933,
       elementType: 'D',
-      id: 27
+      id: 27,
     },
     {
       name: 'Никель',
@@ -269,16 +269,10 @@ const fourthLayer: Array<IElement | Array<IElement> | null> = [
       electronsOnLayer: [2, 8, 16, 2],
       atomicMass: 58.7,
       elementType: 'D',
-      id: 28
+      id: 28,
     },
   ],
   null,
 ];
 
-
-export const layers = [
-    firstLayer,
-  secondLayer,
-  thirdLayer,
-  fourthLayer ,
-];
+export const layers = [firstLayer, secondLayer, thirdLayer, fourthLayer];

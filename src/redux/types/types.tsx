@@ -1,1 +1,1 @@
-export const SET_ELEMENT = "SET_ELEMENT";
+export const SET_ELEMENT = 'SET_ELEMENT';
