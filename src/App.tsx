@@ -24,8 +24,10 @@ export interface ITable {
 export const App = () => {
   return (
     <Provider store={store}>
-      <Table layers={layers} />
-      <SelectedElement />
+      <div className="block-wrapper--flex">
+        <Table layers={layers} />
+        <SelectedElement />
+      </div>
     </Provider>
   );
 };

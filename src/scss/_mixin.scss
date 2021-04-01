@@ -1,3 +1,11 @@
 .no_margin {
   margin: 0;
 }
+
+.block-wrapper {
+  &--flex {
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+  }
+}
