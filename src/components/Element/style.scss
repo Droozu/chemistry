@@ -1,0 +1,73 @@
+.element__container {
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  padding: 3px;
+  width: 100px;
+  &--s {
+    background-color: $s-color;
+    cursor: pointer;
+  }
+  &--p {
+    background-color: $p-color;
+    cursor: pointer;
+  }
+  &--d {
+    background-color: $d-color;
+    cursor: pointer;
+    flex-direction: row-reverse;
+    .element__info {
+      &--text {
+        align-items: flex-end;
+      }
+      &--numbers {
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+      }
+    }
+  }
+  &--f {
+    background-color: $f-color;
+    cursor: pointer;
+  }
+}
+
+.element {
+  &__info {
+    display: flex;
+    &--text {
+      flex-direction: column;
+    }
+    &--numbers {
+      gap: 3px;
+    }
+  }
+  &__symbol {
+    margin: 0;
+    font-size: 1.2em;
+  }
+  &__name {
+    margin: 0;
+    font-size: 0.65em;
+    text-transform: uppercase;
+  }
+  &__mass {
+    margin: 4px 0 0 0;
+    font-size: 0.55em;
+  }
+  &__sequence {
+    margin: 0;
+    font-size: 0.8em;
+  }
+  &__layers {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 0.45em;
+  }
+}
+
+
+
+

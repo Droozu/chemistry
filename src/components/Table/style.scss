@@ -1,0 +1,43 @@
+.main-table {
+  border-collapse: collapse;
+  &__item {
+    border: 1px solid black;
+    padding: 0;
+    &--group {
+      width: 100px;
+      text-align: center;
+    }
+    &--type {
+      border-bottom: 0;
+    }
+    &--vii {
+      width: 300px;
+    }
+    &--rowNumber {
+      text-align: center;
+    }
+    &--rowAltNumber {
+      text-align: center;
+      height: 60px;
+      border-right: 0;
+    }
+  }
+}
+
+
+.element-table {
+  &__containter {
+    padding: 0;
+    height: 60px;
+  }
+}
+
+.table {
+  &__headers {
+    text-align: center;
+    &--col {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+}
