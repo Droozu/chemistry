@@ -13,24 +13,22 @@
     &--vii {
       width: 300px;
     }
-    &--rowNumber {
+    &--rowFirstNumber {
       text-align: center;
     }
-    &--rowAltNumber {
+    &--rowSecondNumber {
       text-align: center;
       height: 60px;
       border-right: 0;
     }
   }
 }
-
 .element-table {
   &__containter {
     padding: 0;
     height: 60px;
   }
 }
-
 .table {
   &__headers {
     text-align: center;

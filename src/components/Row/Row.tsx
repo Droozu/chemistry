@@ -1,4 +1,3 @@
-import React from 'react';
 import { Element } from '../Element/Element';
 import { IElement } from '../../App';
 

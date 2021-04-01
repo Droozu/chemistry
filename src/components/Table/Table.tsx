@@ -5,11 +5,11 @@ export const Table = ({ layers }: ITable) => {
   const rows = layers.map((layer, index) => {
     return (
       <tr className="main-table__row">
-        <td className="main-table__item main-table__item--rowNumber">
-          <h2>{index + 1}</h2>
+        <td className="main-table__item main-table__item--rowFirstNumber">
+          <h2 className="no_margin">{index + 1}</h2>
         </td>
-        <td className="main-table__item main-table__item--rowAltNumber">
-          <h3>{index + 1}</h3>
+        <td className="main-table__item main-table__item--rowSecondNumber">
+          <h3 className="no_margin">{index + 1}</h3>
         </td>
         {Row(layer)}
       </tr>

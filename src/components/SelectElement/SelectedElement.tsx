@@ -36,11 +36,11 @@ export const SelectedElement = () => {
           </section>
         </div>
         <div>
-          <p className="selected-element__info">Символ элемента - {symbol}</p>
-          <p className="selected-element__info">Название элемента - {name}</p>
-          <p className="selected-element__info">Порядковый номер - {sequenceNumber}</p>
-          <p className="selected-element__info">Относительная атомная масса - {atomicMass}</p>
-          <p className="selected-element__info">Распределение электронов по слоям - {layers}</p>
+          <p className="selected-element__info">Название элемента: {name}</p>
+          <p className="selected-element__info">Порядковый номер: {sequenceNumber}</p>
+          <p className="selected-element__info">Символ элемента: {symbol}</p>
+          <p className="selected-element__info">Относительная атомная масса: {atomicMass}</p>
+          <p className="selected-element__info">Распределение электронов по слоям: {layers}</p>
         </div>
       </section>
     );
